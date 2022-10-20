@@ -118,7 +118,7 @@ end;
 
 procedure TFMain.MenuApplicationAboutClick(Sender: TObject);
 begin
-  MessageDlg(FMain.Caption+#13#13+'This tool if free and opensource'#13#13'http://www.github.com/Nitroito/Anno1800-Explorer',mtInformation,[mbOK],0);
+  MessageDlg(FMain.Caption+#13#13+'This tool if free and opensource'#13#13'http://github.com/Nitroito/Anno1800-Explorer',mtInformation,[mbOK],0);
 end;
 
 procedure TFMain.MenuApplicationCloseClick(Sender: TObject);
@@ -128,7 +128,7 @@ end;
 
 procedure TFMain.MenuApplicationGotoGithubClick(Sender: TObject);
 begin
-  ShellExecute(0,'open','https://www.github.com/Nitroito/Anno1800-Explorer','','',SW_NORMAL);
+  ShellExecute(0,'open','https://github.com/Nitroito/Anno1800-Explorer','','',SW_NORMAL);
 end;
 
 procedure TFMain.Splitter2Moved(Sender: TObject);
