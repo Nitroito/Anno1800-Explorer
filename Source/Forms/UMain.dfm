@@ -2,7 +2,7 @@ object FMain: TFMain
   Left = 0
   Top = 0
   Margins.Bottom = 0
-  Caption = 'Anno 1800 Explorer v0.2 (c) Nitroito 2022'
+  Caption = 'Anno 1800 Explorer v1.0 (c) Nitroito 2022'
   ClientHeight = 689
   ClientWidth = 1200
   Color = clBtnFace
@@ -2351,6 +2351,7 @@ object FMain: TFMain
       end
       object MenuApplicationGotoGithub: TMenuItem
         Caption = 'Goto Github'
+        OnClick = MenuApplicationGotoGithubClick
       end
       object N1: TMenuItem
         Caption = '-'

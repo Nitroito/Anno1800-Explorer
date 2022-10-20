@@ -6,6 +6,7 @@ Uses
   UUtils,
   Winapi.Windows,
   Winapi.Messages,
+  Winapi.ShellApi,
   System.SysUtils,
   System.Variants,
   System.Classes,
@@ -64,6 +65,7 @@ Type
     procedure Splitter2Moved(Sender: TObject);
     procedure MenuApplicationAboutClick(Sender: TObject);
     procedure MenuApplicationCloseClick(Sender: TObject);
+    procedure MenuApplicationGotoGithubClick(Sender: TObject);
   Private
   Public
   End;
@@ -122,6 +124,11 @@ end;
 procedure TFMain.MenuApplicationCloseClick(Sender: TObject);
 begin
   Close;
+end;
+
+procedure TFMain.MenuApplicationGotoGithubClick(Sender: TObject);
+begin
+  ShellExecute(0,'open','https://www.github.com/Nitroito/Anno1800-Explorer','','',SW_NORMAL);
 end;
 
 procedure TFMain.Splitter2Moved(Sender: TObject);
